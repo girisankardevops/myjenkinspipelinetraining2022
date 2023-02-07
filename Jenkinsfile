@@ -17,7 +17,7 @@ stages{
                     }
 	stage ('Deploy'){
               steps{
-                     Sh 'java -jar target/*.jar'
+                     sh 'java -jar target/*.jar'
                    }
                   }
       }
