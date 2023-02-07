@@ -15,9 +15,9 @@ stages{
                       sh 'mvn clean package'
                      }
                     }
-	stage ('Test'){
+	stage ('Deploy'){
               steps{
-                     echo "test my final webapp"
+                     Sh 'java -jar target/*.jar'
                    }
                   }
       }
